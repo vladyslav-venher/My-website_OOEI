@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Агентство Нерухомості</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a class="logo" href="./index.html"
+          >Real<span class="logo-part">Estate</span></a
+        >
+        <!-- <a class="current nav-main" href="#home">Головна</a> -->
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#about">Про нас</a></li>
+            <li><a class="nav-link" href="#contact">Форма</a></li>
+            <li><a class="nav-link" href="#footer">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-wrap">
+          <h1 class="hero-title">Нерухомість вашої мрії!</h1>
+          <p class="hero-text">
+            Досліджуйте найкращі пропозиції з комфортом і легкістю.
+          </p>
+          <a href="#contact" class="hero-button">Заповнити форму</a>
+        </div>
+      </section>
+
+      <section id="info">
+        <div class="container info-container">
+          <div>
+            <h2 class="info-title">Інформація</h2>
+            <div class="info-text">
+              <p>
+                Ми пропонуємо широкий вибір нерухомості: від сучасних квартир до
+                будинків у передмісті. Наші спеціалісти готові допомогти вам на
+                кожному етапі — від вибору житла до укладення угоди.
+              </p>
+            </div>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Параметр</th>
+                <th>Деталі</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Кількість квартир</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td>Площа</td>
+                <td>від 100 м²</td>
+              </tr>
+              <tr>
+                <td>Кількість поверхів</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>Паркомісця</td>
+                <td>2 на квартиру</td>
+              </tr>
+              <tr>
+                <td>Рік будівництва</td>
+                <td>2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container about-container">
+          <h2 class="about-title">Про нас</h2>
+          <div class="video-wrapper">
+            <video
+              src="./images/video.mp4"
+              width="600"
+              controls="controls"
+              class="video"
+            >
+              Ваш браузер не підтримує відео.
+            </video>
+          </div>
+          <div class="about-features">
+            <div class="feature">
+              <h3 class="about-subtitle">Професіоналізм</h3>
+              <p class="about-text">
+                Наша команда складається з досвідчених фахівців, які знають усі
+                тонкощі ринку нерухомості.
+              </p>
+            </div>
+            <div class="feature">
+              <h3 class="about-subtitle">Довіра</h3>
+              <p class="about-text">
+                Ми супроводжуємо вас на кожному етапі угоди, забезпечуючи
+                прозорість та чесність.
+              </p>
+            </div>
+            <div class="feature">
+              <h3 class="about-subtitle">Сучасність</h3>
+              <p class="about-text">
+                Ми використовуємо новітні технології, щоб зробити ваш досвід
+                максимально комфортним.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container contact-container">
+          <h2 class="contact-title">Зв'яжіться з нами</h2>
+          <form id="form" class="contact-form">
+            <div class="form-group">
+              <label for="firstName">Ім'я *</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Введіть своє ім'я"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Прізвище *</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Введіть своє прізвище"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Ел. адреса *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Введіть свою ел. адресу"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Повідомлення</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Введіть своє повідомлення"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-button">
+              Зв'язатися з агентом
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <p>Вашу заявку прийнято! Дякуємо за співпрацю!</p>
+          <button id="closeModal" class="close-modal">Закрити</button>
+        </div>
+      </div>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="container footer-container">
+        <a class="logo" href="./index.html">
+          Real<span class="logo-part">Estate</span>
+        </a>
+        <div class="footer-info">
+          <p class="footer-text">
+            Ми завжди готові допомогти вам знайти житло вашої мрії. Зв'яжіться з
+            нами!
+          </p>
+          <p class="footer-contact">
+            <strong>Телефон:</strong>
+            <a href="tel:+380123456789">+38 (012) 345-67-89</a><br />
+            <strong>Email:</strong>
+            <a href="mailto:info@realestate.com">info@realestate.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
